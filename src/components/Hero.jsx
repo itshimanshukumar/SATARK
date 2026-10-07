@@ -116,8 +116,7 @@ export default function Hero() {
               <span style={{ background:'#EF4444', color:'#fff', padding:'2px 8px', borderRadius:999, fontSize:10, display:'flex', alignItems:'center', gap:4 }}>
                 <span className="live-dot" style={{ width:6, height:6, background:'#fff', borderRadius:'50%', display:'inline-block' }} />LIVE
               </span>
-              AI IS SCANNING 18,442 MPLAD WORKS RIGHT NOW
-              <span className="font-hindi" style={{ opacity:.7 }}>• लाइव निगरानी</span>
+              AI IS SCANNING 18,442 PUBLIC WORKS RIGHT NOW
             </div>
           </Reveal>
 
@@ -131,15 +130,9 @@ export default function Hero() {
 
           <Reveal delay={0.18}>
             <p style={{ color:'rgba(255,255,255,.8)', fontSize:'1.1rem', lineHeight:1.65, maxWidth:520 }}>
-              Meet <strong style={{ color:'#fff' }}>SATARK AI</strong> — India's intelligent watchdog that detects{' '}
+              Meet <strong style={{ color:'#fff' }}>SATARK AI</strong> — an intelligent watchdog that detects{' '}
               <span style={{ background:'rgba(255,107,26,.35)', padding:'1px 4px', borderRadius:4 }}>ghost projects, inflated bills & delays</span>{' '}
-              in the MPLAD Scheme <em className="font-hindi" style={{ fontStyle:'normal' }}>before</em> public money is lost.
-            </p>
-          </Reveal>
-
-          <Reveal delay={0.22}>
-            <p className="font-hindi" style={{ color:'#FFB25A', fontSize:'1.1rem', marginTop:8 }}>
-              अब कोई फर्जी काम, कोई बढ़ा हुआ बिल — AI की नजर से नहीं बचेगा।
+              in government schemes before public money is lost.
             </p>
           </Reveal>
 

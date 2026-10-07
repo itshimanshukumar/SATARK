@@ -139,12 +139,11 @@ export default function Dashboard() {
       <div className="container" style={{ position:'relative' }}>
         <Reveal>
           <div style={{ display:'flex', alignItems:'center', gap:12, marginBottom:16 }}>
-            <span style={{ background:'#DC2626', color:'#fff', fontSize:11, fontWeight:800, padding:'5px 12px', borderRadius:999, display:'flex', alignItems:'center', gap:8 }}>
-              <span className="live-dot" style={{ width:8, height:8, background:'#fff', borderRadius:'50%', display:'inline-block' }} />
-              CHAPTER 07 • LIVE COMMAND CENTER
-            </span>
+              <span style={{ background:'#EF4444', color:'#fff', fontSize:11, fontWeight:800, padding:'5px 12px', borderRadius:999, display:'flex', alignItems:'center', gap:8 }}>
+                <span className="live-dot" style={{ width:8, height:8, background:'#fff', borderRadius:'50%', display:'inline-block' }} />
+                LIVE COMMAND CENTER
+              </span>
             <span style={{ flex:1, height:2, background:'rgba(255,255,255,.08)' }} />
-            <span className="font-hindi" style={{ color:'rgba(255,255,255,.4)', fontWeight:700 }}>कंट्रोल रूम</span>
           </div>
         </Reveal>
 

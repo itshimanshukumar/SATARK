@@ -2,14 +2,9 @@ import { useEffect } from 'react';
 import Lenis from 'lenis';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import PromiseSection from '../components/Promise';
-import Problem from '../components/Problem';
-import CaseFiles from '../components/CaseFiles';
-import Solution from '../components/Solution';
 import Dashboard from '../components/Dashboard';
-import FieldTruth from '../components/FieldTruth';
-import Impact from '../components/Impact';
 import Footer from '../components/Footer';
+import Features from '../components/Features';
 
 export default function Landing() {
   useEffect(() => {
@@ -32,13 +27,8 @@ export default function Landing() {
       <Navbar />
       <main>
         <Hero />
-        <PromiseSection />
-        <Problem />
-        <CaseFiles />
-        <Solution />
+        <Features />
         <Dashboard />
-        <FieldTruth />
-        <Impact />
       </main>
       <Footer />
     </>

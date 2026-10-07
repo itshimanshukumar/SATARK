@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom';
 import { useScrollProgress } from '../hooks/useScroll';
 
 const CHAPTERS = [
-  ['top','Ch 1 — Opening'],['promise','Ch 2 — The Promise'],['problem','Ch 3 — The Leakage'],
-  ['cases','Ch 4 — Case Files'],['solution','Ch 5 — SATARK AI'],['how','Ch 6 — How It Works'],
-  ['dashboard','Ch 7 — Command Center'],['field','Ch 8 — Field Truth'],['stakeholders','Ch 9 — For Everyone'],
-  ['impact','Ch 10 — Impact'],
+  ['top','Home'],
+  ['features','Platform Features'],
+  ['dashboard','Command Center']
 ];
 
 export default function Navbar() {
@@ -45,7 +44,7 @@ export default function Navbar() {
         <div className="container" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 24px' }}>
           <span style={{ fontWeight:700, letterSpacing:'.08em', opacity:.8 }}>
             भारत सरकार | GOVT. OF INDIA&nbsp;&nbsp;•&nbsp;&nbsp;
-            <span className="font-hindi">सांसद आदर्श ग्राम योजना • MPLADS</span>
+            <span>MPLADS</span>
           </span>
           <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
             <span style={{ display:'flex', alignItems:'center', gap:6, opacity:.7 }}>
@@ -81,7 +80,7 @@ export default function Navbar() {
 
           {/* Desktop links */}
           <div style={{ display:'flex', alignItems:'center', gap:24, fontSize:13, fontWeight:700, color:'rgba(11,29,58,.8)' }} className="desktop-nav">
-            {[['#promise','Story'],['#problem','Problem'],['#solution','AI Solution'],['#dashboard','Live Dashboard'],['#field','Field Proof'],['#citizen','Citizens']].map(([href,label]) => (
+            {[['#top','Home'],['#features','Features'],['#dashboard','Live Dashboard']].map(([href,label]) => (
               <a key={href} href={href} style={{ textDecoration:'none', color:'inherit', transition:'color .2s' }}
                  onMouseEnter={e=>e.target.style.color='#FF6B1A'}
                  onMouseLeave={e=>e.target.style.color='rgba(11,29,58,.8)'}>{label}</a>
@@ -112,7 +111,7 @@ export default function Navbar() {
         {/* Mobile menu */}
         {mobileOpen && (
           <div style={{ borderTop:'2px solid rgba(11,29,58,.08)', background:'#FFFEF7', padding:'16px 24px', display:'flex', flexDirection:'column', gap:12, fontWeight:700 }}>
-            {[['#promise','01 • The Promise'],['#problem','02 • The Leakage'],['#cases','03 • Case Files'],['#solution','04 • SATARK AI'],['#dashboard','05 • Live Dashboard'],['#field','06 • Field Truth'],['#citizen','07 • Citizens']].map(([href,label]) => (
+            {[['#top','Home'],['#features','Platform Features'],['#dashboard','Command Center']].map(([href,label]) => (
               <a key={href} href={href} style={{ textDecoration:'none', color:'#0B1D3A' }} onClick={() => setMobileOpen(false)}>{label}</a>
             ))}
           </div>
@@ -122,7 +121,7 @@ export default function Navbar() {
       {/* Chapter nav dots */}
       <div style={{ position:'fixed', right:16, top:'50%', transform:'translateY(-50%)', zIndex:90, display:'flex', flexDirection:'column', gap:10, alignItems:'center' }}
            className="chapter-nav">
-        <div style={{ fontSize:9, fontFamily:'IBM Plex Mono', fontWeight:700, color:'rgba(11,29,58,.4)', writingMode:'vertical-lr', letterSpacing:'.1em', marginBottom:4 }}>CHAPTERS</div>
+        <div style={{ fontSize:9, fontFamily:'IBM Plex Mono', fontWeight:700, color:'rgba(11,29,58,.4)', writingMode:'vertical-lr', letterSpacing:'.1em', marginBottom:4 }}>SECTIONS</div>
         {CHAPTERS.map(([id]) => (
           <div key={id} className={`chapter-dot ${curChapter===id ? 'active' : ''}`}
                onClick={() => document.getElementById(id)?.scrollIntoView({ behavior:'smooth' })} />
